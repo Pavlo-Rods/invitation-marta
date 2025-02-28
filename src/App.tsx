@@ -1,26 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import { Page } from "./components/Page/Page";
+import { AppStyled } from "./styled";
+import { LoadPage } from "./components/LoadPage";
 
-function App() {
+import Image1 from "./images/image1.png"
+import Image2 from "./images/image2.png";
+import Image3 from "./images/image3.png";
+import Image4 from "./images/image4.png";
+
+import { Page2, Page3, Page4 } from "./components/Pages";
+
+const pages = [
+  {
+    img: Image2,
+    content: <Page2 />
+  },
+  {
+    img: Image3,
+    content: <Page3 />
+  },
+  {
+    img: Image4,
+    content: <Page4 />
+  }
+];
+
+export const App = () => {
+  const [loading, setLoading] = useState(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppStyled>
+      {loading && <LoadPage />}
+      {pages.map((page, index) => (
+        <Page setLoading={setLoading} key={index} index={index} page={page}></Page>
+      ))}
+    </AppStyled>
   );
-}
-
-export default App;
+};
