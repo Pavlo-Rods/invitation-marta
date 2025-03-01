@@ -74,8 +74,8 @@ export const Page2Container = styled.div`
   flex-direction: column;
   text-align: center;
 
-  background-color: #ffffffa8;
-
+  background-color: #fff6d7;
+  opacity: 0.9;
   ${TextStyled} {
     font-family: "Podkova", sans-serif;
   }

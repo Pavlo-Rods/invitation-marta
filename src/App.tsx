@@ -24,7 +24,7 @@ const pages = [
 ];
 
 export const App = () => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   return (
     <AppStyled>
