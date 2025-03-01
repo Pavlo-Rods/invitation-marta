@@ -3,24 +3,22 @@ import { Page } from "./components/Page/Page";
 import { AppStyled } from "./styled";
 import { LoadPage } from "./components/LoadPage";
 
-import Image1 from "./images/image1.png"
-import Image2 from "./images/image2.png";
-import Image3 from "./images/image3.png";
-import Image4 from "./images/image4.png";
+import Image2 from "./images/Proyecto nuevo.png";
+import "@fontsource/pinyon-script";
 
-import { Page2, Page3, Page4 } from "./components/Pages";
+import { Page1, Page3, Page4 } from "./components/Pages";
 
 const pages = [
   {
     img: Image2,
-    content: <Page2 />
+    content: <Page1 />
   },
   {
-    img: Image3,
+    img: Image2,
     content: <Page3 />
   },
   {
-    img: Image4,
+    img: Image2,
     content: <Page4 />
   }
 ];

@@ -6,6 +6,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fontsource/pinyon-script": "^5.1.1",
+    "@vis.gl/react-google-maps": "^1.5.1",
+    "invitation-marta": "file:",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-google-forms-hooks": "^1.2.4",
